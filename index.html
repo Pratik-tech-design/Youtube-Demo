@@ -56,6 +56,53 @@
         color: var(--muted);
         line-height: 1.6;
       }
+
+      .btn-row {
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 16px;
+        border-radius: 12px;
+        border: 1px solid transparent;
+        color: #0b1020;
+        text-decoration: none;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 120ms ease, filter 120ms ease, box-shadow 120ms ease;
+        user-select: none;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+        filter: brightness(1.02);
+      }
+
+      .btn:active {
+        transform: translateY(0);
+      }
+
+      .btn:focus-visible {
+        outline: 3px solid rgba(99, 102, 241, 0.7);
+        outline-offset: 3px;
+      }
+
+      .btn--primary {
+        background: #a5b4fc;
+        box-shadow: 0 12px 30px rgba(165, 180, 252, 0.22);
+      }
+
+      .btn--secondary {
+        background: #6ee7b7;
+        box-shadow: 0 12px 30px rgba(110, 231, 183, 0.18);
+      }
     </style>
   </head>
   <body>
@@ -63,6 +110,10 @@
       <section class="hero__content" aria-label="Hero">
         <h1>Hero Section</h1>
         <p>A simple placeholder text centered on the screen.</p>
+        <div class="btn-row" role="group" aria-label="Hero actions">
+          <a class="btn btn--primary" href="#">Primary action</a>
+          <a class="btn btn--secondary" href="#">Secondary action</a>
+        </div>
       </section>
     </main>
   </body>
