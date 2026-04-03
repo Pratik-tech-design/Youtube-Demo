@@ -5,7 +5,7 @@ accountcity = "Delhi";
 let accountState; // undefined
 
 // accountId = 1001; // not variale.
-accountEmail = "pratok@gmail.com";
+accountEmail = "prk@gmail.com";
 accountPass = "54321";
 accountcity = "Noida";
 console.log(accountId);
